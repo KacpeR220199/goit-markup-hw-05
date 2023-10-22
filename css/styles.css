@@ -22,6 +22,10 @@ body{
     padding: 12px 24px;
     display: inline;
     border: 1px solid #e7e9fc;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-all:hover,
 .filter-all:focus{
@@ -367,8 +371,14 @@ img {
 }
 .ads{
     display: block;
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ads:hover,
+.ads:hover{
+    transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .ads:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
