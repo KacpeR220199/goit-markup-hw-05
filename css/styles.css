@@ -122,7 +122,18 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     font-size: 16px;
     line-height:1.5;
     letter-spacing: 0.02em;
-    color:var(--link-studio-color);
+    color:#404bbf;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-studio::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 ._link-studio{
     text-decoration: none;
@@ -166,7 +177,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--mail-color);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first-section{
     background-color: #2e2f42;
@@ -570,7 +581,7 @@ button {
     margin-right: 76px;
     margin-bottom: 17.5px;
     display: inline-block;
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     height: 24px;
 }
