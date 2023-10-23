@@ -615,13 +615,33 @@ button {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 .feature-modal{
-    color: #2e2f4242;
-    background-color: #e7e9fc;
-    margin: 8px;
+    transition:fill 250ms cubic-beizer(0.4,0,0.2,1);
+}
+.feature-modal:hover,
+.feature-modal:focus{
+    fill: #ffffff;
 }
 .button-modal{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-beizer(0.4,0,0.2,1),
+    border 250ms cubic-beizer(0.4,0,0.2,1);
+}
+.button-modal:hover,
+.button-modal:focus{
+    background-color: #404bbf;
+    border:none;
 }
 .figure{
     position: relative;
