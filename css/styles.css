@@ -604,6 +604,7 @@ button {
     opacity: 0;
 }
 .modal{
+    position: absolute;
     width: 408px;
     height: 584px;
     padding: 80px 516px 13px 516px;
