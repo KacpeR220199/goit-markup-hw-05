@@ -602,6 +602,7 @@ button {
     position: absolute;
     left: 50%;
     right: 50%;
+    top: 50%;
     width: 408px;
     height: 584px;
     transform: translate(-50%,-50%);
@@ -644,6 +645,7 @@ button {
 }
 .button-modal:hover,
 .button-modal:focus{
+    fill: #ffffff;
     background-color: #404bbf;
     border:none;
 }
