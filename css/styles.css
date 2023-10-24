@@ -97,6 +97,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     margin-right: 76px;
     display: inline-block;
     margin-bottom: 16px;
+    padding: 24px 0;
 }
 .accent{
     color:var(--span-color);
@@ -112,7 +113,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 }
 .link{
     text-decoration: none;
-    padding: 24px 0;
 }
 .-link{
     text-decoration: none;
@@ -123,6 +123,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 
 }
 .link-studio{
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height:1.5;
@@ -229,6 +230,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     letter-spacing: 0.02em;
     color: var(--heading_app-color);
     margin-bottom: 8px;
+    padding: 0px 16px;
 }
 .acapit{
     font-size: 16px;
@@ -242,7 +244,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color:var(--acapit_app-color);
+    color: var(--acapit_app-color);
+    padding: 0px 16px;
 }
 .what-are{
 font-size: 36px;
@@ -372,6 +375,7 @@ img {
 }
 .ads{
     display: block;
+    height: 100%;
     box-shadow:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ads:hover{
@@ -387,10 +391,10 @@ img {
     transform: translateY(0%);
 }
 .ads-div{
-    padding: 32px 16px;
+    padding: 32px 0px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
+    gap: 32px;
 }
 h1,
 h2,
@@ -509,9 +513,6 @@ button {
     border-radius: 4px;
     margin-bottom: 8px;
 }
-.footer-media{
-    display: inline-block;
-}
 .social-team{
     display: flex;
     justify-content: center;
@@ -596,23 +597,21 @@ button {
     display: inline-block;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
-    height: 24px;
-}
-.is-hidden{
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
 }
 .modal{
     position: absolute;
+    left: 50%;
+    right: 50%;
     width: 408px;
     height: 584px;
+    transform: translate(-50%,-50%);
     padding: 80px 516px 13px 516px;
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .feature-modal{
     transition:fill 250ms cubic-beizer(0.4,0,0.2,1);
@@ -620,6 +619,11 @@ button {
 .feature-modal:hover,
 .feature-modal:focus{
     fill: #ffffff;
+}
+.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
 }
 .button-modal{
     position: absolute;
@@ -661,7 +665,7 @@ button {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.script{
+.backdrop{
     position: fixed;
     top: 0;
     left: 0;
