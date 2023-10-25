@@ -671,6 +671,7 @@ button {
     padding: 40px 32px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transform: translateY(100%);
 }
 .ads:hover .acapit-fig{
     translate: 0;
